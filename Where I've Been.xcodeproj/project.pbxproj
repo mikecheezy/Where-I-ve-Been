@@ -12,6 +12,8 @@
 		6E06FBA41DB583550093E865 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E06FBA21DB583550093E865 /* Main.storyboard */; };
 		6E06FBA61DB583550093E865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E06FBA51DB583550093E865 /* Assets.xcassets */; };
 		6E06FBA91DB583550093E865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E06FBA71DB583550093E865 /* LaunchScreen.storyboard */; };
+		6EAD0CF41DB588DD00A88E9E /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAD0CF31DB588DD00A88E9E /* PlacesViewController.swift */; };
+		6EAD0CF71DB5D51000A88E9E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAD0CF61DB5D51000A88E9E /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		6E06FBA51DB583550093E865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E06FBA81DB583550093E865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E06FBAA1DB583550093E865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EAD0CF31DB588DD00A88E9E /* PlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesViewController.swift; path = ../PlacesViewController.swift; sourceTree = "<group>"; };
+		6EAD0CF61DB5D51000A88E9E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EAD0CF71DB5D51000A88E9E /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				6E06FB9D1DB583540093E865 /* Where I've Been */,
 				6E06FB9C1DB583540093E865 /* Products */,
+				6EAD0CF51DB5D50F00A88E9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				6E06FB9E1DB583550093E865 /* AppDelegate.swift */,
+				6EAD0CF31DB588DD00A88E9E /* PlacesViewController.swift */,
 				6E06FBA01DB583550093E865 /* ViewController.swift */,
 				6E06FBA21DB583550093E865 /* Main.storyboard */,
 				6E06FBA51DB583550093E865 /* Assets.xcassets */,
@@ -62,6 +69,14 @@
 				6E06FBAA1DB583550093E865 /* Info.plist */,
 			);
 			path = "Where I've Been";
+			sourceTree = "<group>";
+		};
+		6EAD0CF51DB5D50F00A88E9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EAD0CF61DB5D51000A88E9E /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +111,7 @@
 				TargetAttributes = {
 					6E06FB9A1DB583540093E865 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3H28JH7JAH;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EAD0CF41DB588DD00A88E9E /* PlacesViewController.swift in Sources */,
 				6E06FBA11DB583550093E865 /* ViewController.swift in Sources */,
 				6E06FB9F1DB583550093E865 /* AppDelegate.swift in Sources */,
 			);
@@ -258,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3H28JH7JAH;
 				INFOPLIST_FILE = "Where I've Been/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cheezy.Where-I-ve-Been";
@@ -270,6 +288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3H28JH7JAH;
 				INFOPLIST_FILE = "Where I've Been/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cheezy.Where-I-ve-Been";
@@ -297,6 +316,7 @@
 				6E06FBAF1DB583550093E865 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
